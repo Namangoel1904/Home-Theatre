@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <Link rel="preload" href="/static/t2.jpg" as="image" />
+    <Link rel="preload" href="/static/phoneb.jpg" as="image" />
+
+    <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet" />
+    <!-- <link href="{{ url_for('static', filename='/style.css') }}" rel="stylesheet" > -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <!--<link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet" />-->
+</head>
+<body style="background-color: #e30202;">
+    <div class="Nav">
+        <div class="Nav1" >
+            <button src="#" style="color:#FFE24B" class="specialpx">Today's Special !</button>
+        </div>
+        <div class="Nav2">
+            <button src="#" class="specialpx2">Sunday Special!</button>
+        </div>
+        <div class="Nav3">
+            <button src="#" class="specialpx3">Wishlist</button>
+        </div>
+    </div>
+    <div id="detail">
+        <p class="Detail" >Pocket Theatre</p>
+        <div id="subDetail">
+            <p>Every day, we will stream One Movie and One Webseries from both Bollywood and Hollywood in English or in Hindi Language. On sunday we will Stream all the movies which we streamed whole week, at once.
+            You woulld be able to download them on sunday And It would be completely free-of-cost, No hidden charges.</p>
+        </div>
+        <p class="instruction" >If you want to suggest any movie to be stream, use wishlist section!</p>
+        <p class="start" >Now Let's Roll!</p>
+        <div id="Selection">
+            <a href="{{url_for('bolly')}}"><button type="button" id="button1" class="btn btn-outline-warning" src="/bolly.html">Bollywood</button></a>
+            <button type="button" id="button2" class="btn btn-outline-warning" >Hollywood (coming soon)</button>
+            <!-- <button type="button" class="btn btn-outline-warning"style="--bs-btn-padding-y: .75rem; --bs-btn-padding-x: 1rem; --bs-btn-font-size: 1rem;" >Bollywood</button>
+            <button type="button" class="btn btn-outline-warning"style="--bs-btn-padding-y: .75rem; --bs-btn-padding-x: 1rem; --bs-btn-font-size: 1rem;" >Hollywood</button> -->
+
+        </div>
+    </div>
+
+</body>
+</html>

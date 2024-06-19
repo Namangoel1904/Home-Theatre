@@ -1,0 +1,17 @@
+body{
+    background-color: #131312;
+}
+.chan{
+    width: 700px;
+    height: 400px;
+
+}
+
+@media screen and (max-width: 600px) {
+    .chan{
+        margin-left: 20px;
+        /*padding-top: 150px;*/
+        width:80%;
+        height: 295px;
+    }
+}
